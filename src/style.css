@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Figtree-bold";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Figtree-meduim";
+  src: url("../assets/fonts/static/Figtree-SemiBold.ttf");
+}
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+  --font-size: 13px;
+  --font-size-title: larger;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.font-bold {
+  font-family: "Figtree-bold";
+}
+.font-meduim {
+  font-family: "Figtree-meduim";
+}
+body {
+  width: 100%vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Yellow);
+}
+body > main {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 1px var(--Black);
+  background-color: var(--White);
+}
+body > main > img {
+  border-radius: 10px;
+  width: 100%;
+}
+body > main > div {
+  padding: 5px 11px;
+  width: min-content;
+  border-radius: 5px;
+  background-color: var(--Yellow);
+}
+body > main > p.paragraphe {
+  color: var(--Grey);
+}
+body > main > :is(h2, div) {
+  margin-block: 10px;
+}
+body > main > h2:hover {
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  color: var(--Yellow);
+}
+body > main > section {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+body > main > section > img {
+  width: 40px;
+  margin-right: 20px;
+}

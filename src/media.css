@@ -1,0 +1,9 @@
+@media screen and (max-width:375px) {
+    body > main {
+        width: 300px;
+        height: 450px;
+    }
+    body > main > h2 {
+        font-size: larger;
+    }
+}
